@@ -7,8 +7,15 @@
 // ======================
 import './cards.scss';
 
+// ==============================
+// ==== Sub-Component Import ====
+// ==============================
+import Card from './Card';
+
 const Cards = () => (
-  <div>Ici le composant Cards</div>
+  <div className="cards">
+    <Card />
+  </div>
 );
 
 export default Cards;
