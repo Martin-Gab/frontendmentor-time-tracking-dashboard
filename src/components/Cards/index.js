@@ -15,6 +15,11 @@ import Card from './Card';
 const Cards = () => (
   <div className="cards">
     <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
   </div>
 );
 

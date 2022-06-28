@@ -5,7 +5,6 @@
 // ======================
 // ==== Local Import ====
 // ======================
-import menu from '../../assets/images/icon-ellipsis.svg';
 import workIcon from '../../assets/images/icon-work.svg';
 
 const Card = () => (
