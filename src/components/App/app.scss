@@ -5,53 +5,8 @@
 @use '../../styles/vars';
 
 .app {
-    .perso-card {
-        width: 90%;
-        margin: vars.$mobileTopBottomMargin auto;
-        background-color: vars.$infoCardBckgd;
-        border-radius: vars.$cardBorderRadius;
-        overflow: hidden;
-
-        .infos {
-            background-color: vars.$persoCardBckgd;
-            border-radius: 0 0 vars.$cardBorderRadius vars.$cardBorderRadius;
-            padding: vars.$cardPadding;
-            display: flex;
-            align-items: center;
-
-            &__picture {
-                width: 25%;
-                border-radius: 50%;
-                border: 3px solid white;
-                margin-right: .5rem;
-            }
-
-            &__name {
-                color: white;
-                font-size: 1.5rem;
-                font-weight: vars.$lightWeight;
-
-                span {
-                    font-size: .8rem;
-                    font-weight: vars.$lightWeight;
-                    display: block;
-                    margin-bottom: .5rem;
-                }
-            }
-        }
-
-        .selection {
-            padding: vars.$cardPadding;
-            display: flex;
-            justify-content: space-between;
-
-            &__item {
-                color: vars.$unselectedAndHover;
-            }
-
-            &__item--selected {
-                color: white;
-            }
-        }
-    }
+    width: 90%;
+    min-width: 290px;
+    max-width: 450px;
+    margin: vars.$mobileTopBottomMargin auto;
 }
