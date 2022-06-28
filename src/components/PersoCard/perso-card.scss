@@ -8,6 +8,7 @@
     background-color: vars.$infoCardBckgd;
     border-radius: vars.$cardBorderRadius;
     overflow: hidden;
+    margin-bottom: vars.$cardMarginBottom;
 
     .infos {
         background-color: vars.$persoCardBckgd;
@@ -19,12 +20,12 @@
         &__picture {
             width: 25%;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 3px solid vars.$mainWhite;
             margin-right: .5rem;
         }
 
         &__name {
-            color: white;
+            color: vars.$mainWhite;
             font-size: 1.5rem;
             font-weight: vars.$lightWeight;
 
@@ -47,7 +48,7 @@
         }
 
         &__item--selected {
-            color: white;
+            color: vars.$mainWhite;
         }
     }
 }

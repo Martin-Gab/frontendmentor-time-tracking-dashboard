@@ -3,3 +3,67 @@
 // ======================================
 
 @use '../../styles/vars';
+
+.cards {
+    .card {
+        margin-bottom: vars.$cardMarginBottom;
+
+        &-icon {
+            background-color: vars.$workCardBckgd;
+            border-radius: vars.$cardBorderRadius vars.$cardBorderRadius 0 0;
+            position: relative;
+            padding-top: 5rem;
+            overflow: hidden;
+
+            &__picture {
+                position: absolute;
+                top: -10px;
+                right: 15px;
+            }
+        }
+
+        &-content {
+            position: relative;
+            top: -2.5rem;
+            background-color: vars.$infoCardBckgd;
+            border-radius: vars.$cardBorderRadius;
+            padding: vars.$cardPadding;
+
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                &__title {
+                    color: vars.$mainWhite;
+                    font-weight: vars.$mediumWeight;
+                }
+
+                &__menu {
+                    background-image: url('../../assets/images/icon-ellipsis.svg');
+                    width: 21px;
+                    height: 5px;
+
+                    // TODO : Faire le hover
+                }
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: vars.$lightWeight;
+
+                &__hours {
+                    font-size: 2rem;
+                    color: vars.$mainWhite;
+                }
+
+                &__before {
+                    color: vars.$timeInfos;
+                }
+            }
+        }
+    }
+}
