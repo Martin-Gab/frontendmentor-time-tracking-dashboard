@@ -45,10 +45,58 @@
 
         &__item {
             color: vars.$unselectedAndHover;
+
+            &--selected {
+                color: vars.$mainWhite;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .perso-card {
+        width: 230px;
+        margin: 1rem;
+
+        .infos {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: calc(100% - 128px);
+
+            &__picture {
+                width: 45%;
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+
+            &__name {
+                font-size: 2rem;
+                line-height: 3rem;
+
+                span {
+                    margin-bottom: .5rem;
+                    line-height: 0;
+                }
+            }
         }
 
-        &__item--selected {
-            color: vars.$mainWhite;
+        .selection {
+            flex-direction: column;
+            justify-content: initial;
+
+            &__item {
+                cursor: pointer;
+                margin-bottom: 1rem;
+
+                &:hover {
+                    color: vars.$mainWhite;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }

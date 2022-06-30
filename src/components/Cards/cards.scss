@@ -70,3 +70,45 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .cards {
+        width: 786px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 230px;
+            margin-bottom: 0;
+            margin: 1rem;
+
+            &-icon {
+                height: 2.8rem;
+
+                &__picture {
+                    left: 60%;
+                }
+            }
+
+            &-content {
+                .top {
+                    margin-bottom: 1.5rem;
+                }
+
+                .bottom {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    &__hours {
+                        font-size: 3rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    &__before {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}

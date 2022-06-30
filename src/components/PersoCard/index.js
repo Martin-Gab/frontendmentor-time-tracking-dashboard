@@ -16,7 +16,7 @@ const PersoCard = () => (
     </div>
     <div className="selection">
       <div className="selection__item">Daily</div>
-      <div className="selection__item--selected">Weekly</div>
+      <div className="selection__item selection__item--selected">Weekly</div>
       <div className="selection__item">Monthly</div>
     </div>
   </div>

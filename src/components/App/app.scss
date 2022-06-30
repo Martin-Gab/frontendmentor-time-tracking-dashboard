@@ -10,3 +10,12 @@
     max-width: 450px;
     margin: vars.$mobileTopBottomMargin auto;
 }
+
+@media screen and (min-width: 1440px) {
+    .app {
+        display: flex;
+        width: 1048px;
+        max-width: none;
+        margin: 0;
+    }
+}

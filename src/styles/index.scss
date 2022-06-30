@@ -5,3 +5,13 @@ body {
   background-color: vars.$mainBckgd;
   font-family: vars.$mainFont;
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
