@@ -12,14 +12,16 @@ import './cards.scss';
 // ==============================
 import Card from './Card';
 
+// =====================
+// ==== Data Import ====
+// =====================
+import cardData from '../../data/data';
+
 const Cards = () => (
   <div className="cards">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    {cardData.map((item) => (
+      <Card key={item.id} data={item} />
+    ))}
   </div>
 );
 

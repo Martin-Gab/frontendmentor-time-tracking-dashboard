@@ -11,6 +11,30 @@
         border-radius: vars.$cardBorderRadius;
         overflow: hidden;
 
+        &--work {
+            background-color: vars.$workCardBckgd;
+        }
+
+        &--play {
+            background-color: vars.$playCardBckgd;
+        }
+
+        &--study {
+            background-color: vars.$studyCardBckgd;
+        }
+
+        &--exercise {
+            background-color: vars.$exerciseCardBckgd;
+        }
+
+        &--social {
+            background-color: vars.$socialCardBckgd;
+        }
+
+        &--selfcare {
+            background-color: vars.$selfcareCardBckgd;
+        }
+
         &-icon {
             height: 3rem;
 
