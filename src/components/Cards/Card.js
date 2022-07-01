@@ -7,6 +7,7 @@
 // ======================
 
 const Card = ({ data }) => {
+  // === Function to apply the right background color to the right card ===
   const cardCssClass = (cardTitle) => {
     let cssClass;
     switch (cardTitle) {
