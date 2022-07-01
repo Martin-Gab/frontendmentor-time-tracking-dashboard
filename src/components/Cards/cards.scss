@@ -68,11 +68,9 @@
                 }
 
                 &__menu {
-                    background-image: url('../../assets/images/icon-ellipsis.svg');
-                    width: 21px;
-                    height: 5px;
-
-                    // TODO : Faire le hover
+                    &:hover path {
+                        fill: vars.$mainWhite;
+                    }
                 }
             }
 
