@@ -5,7 +5,6 @@
 // ======================
 // ==== Local Import ====
 // ======================
-import workIcon from '../../assets/images/icon-work.svg';
 
 const Card = ({ data }) => {
   const cardCssClass = (cardTitle) => {
